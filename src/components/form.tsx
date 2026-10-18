@@ -5,8 +5,8 @@ import { createContext, useCallback, useContext, useId, useMemo, useRef, useStat
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { AlertCircle, Info } from "lucide-react";
 
-import { validateAll, visibleError, type FieldValue, type FormErrors, type FormRules } from "../core/form-core";
-import { cn } from "../utils/cn";
+import { validateAll, visibleError, type FieldValue, type FormErrors, type FormRules } from "../core/form-core.js";
+import { cn } from "../utils/cn.js";
 
 /*
  * 表单：useGammaForm 管值 / 校验 / 提交态；GammaField 管布局（标签、必填星号、说明、字数、报错）。

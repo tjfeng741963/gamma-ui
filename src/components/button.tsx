@@ -5,7 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { Check, Loader2 } from "lucide-react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 export type GammaButtonVariant = "primary" | "cyan" | "soft" | "outline" | "ghost" | "danger" | "glass";
 export type GammaButtonSize = "xs" | "sm" | "md" | "lg";

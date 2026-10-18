@@ -4,8 +4,7 @@ import type { ReactNode } from "react";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion, useMotionValue, useReducedMotion, useSpring, useTransform, type MotionValue } from "motion/react";
 
-import "../styles/effects.css";
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 苹果风材质组件（gm-material：大圆角 + 连续曲率 + 极细上亮下暗描边 + 强模糊高饱和）。

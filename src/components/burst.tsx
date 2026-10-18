@@ -3,8 +3,6 @@
 import { useCallback } from "react";
 import { useReducedMotion } from "motion/react";
 
-import "../styles/effects.css";
-
 /*
  * 点击特效：在点击位置生成粒子 / 冲击环，动画结束自动移除，不经过 React 渲染（不会触发重渲染）。
  * 用法：const burst = useGammaBurst(); <button onClick={(e) => burst(e, "confetti")} className="relative" />

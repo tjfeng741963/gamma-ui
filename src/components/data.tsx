@@ -5,7 +5,7 @@ import { useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ChevronLeft, ChevronRight, FileImage, FileVideo, X } from "lucide-react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /* ===== 头像与头像组 ===== */
 

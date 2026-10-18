@@ -7,54 +7,54 @@
  */
 
 // 基础能力
-export * from "./utils/cn";
-export * from "./components/link";
-export * from "./components/theme";
-export * from "./components/fonts";
-export * from "./components/logo";
-export * from "./components/subjects";
+export * from "./utils/cn.js";
+export * from "./components/link.js";
+export * from "./components/theme.js";
+export * from "./components/fonts.js";
+export * from "./components/logo.js";
+export * from "./components/subjects.js";
 
 // 控件
-export * from "./components/button";
-export * from "./components/controls";
-export * from "./components/select";
-export * from "./components/form";
-export * from "./components/upload";
-export * from "./components/data";
+export * from "./components/button.js";
+export * from "./components/controls.js";
+export * from "./components/select.js";
+export * from "./components/form.js";
+export * from "./components/upload.js";
+export * from "./components/data.js";
 
 // 导航与骨架
-export * from "./components/nav-icon";
-export * from "./components/shell";
-export * from "./components/sidebar";
-export * from "./components/command";
-export * from "./components/major-tabs";
-export * from "./components/tool-row";
+export * from "./components/nav-icon.js";
+export * from "./components/shell.js";
+export * from "./components/sidebar.js";
+export * from "./components/command.js";
+export * from "./components/major-tabs.js";
+export * from "./components/tool-row.js";
 
 // 内容与业务形态
-export * from "./components/cards";
-export * from "./components/hero";
-export * from "./components/composer";
-export * from "./components/charts";
+export * from "./components/cards.js";
+export * from "./components/hero.js";
+export * from "./components/composer.js";
+export * from "./components/charts.js";
 
 // 状态与反馈
-export * from "./components/overlays";
-export * from "./components/states";
-export * from "./components/state-views";
-export * from "./components/skeletons";
-export * from "./components/generation-states";
-export * from "./components/error-page";
+export * from "./components/overlays.js";
+export * from "./components/states.js";
+export * from "./components/state-views.js";
+export * from "./components/skeletons.js";
+export * from "./components/generation-states.js";
+export * from "./components/error-page.js";
 
 // 动效与质感
-export * from "./components/motion";
-export * from "./components/burst";
-export * from "./components/glass";
-export * from "./components/material";
-export * from "./components/hero-buttons";
-export * from "./components/icon-morph";
-export * from "./components/morph-icon";
+export * from "./components/motion.js";
+export * from "./components/burst.js";
+export * from "./components/glass.js";
+export * from "./components/material.js";
+export * from "./components/hero-buttons.js";
+export * from "./components/icon-morph.js";
+export * from "./components/morph-icon.js";
 
 // 纯函数内核（也可从 ./core/* 子路径单独引入）
-export * from "./core/chart-core";
-export * from "./core/form-core";
-export * from "./core/path-morph";
-export * from "./core/upload-core";
+export * from "./core/chart-core.js";
+export * from "./core/form-core.js";
+export * from "./core/path-morph.js";
+export * from "./core/upload-core.js";

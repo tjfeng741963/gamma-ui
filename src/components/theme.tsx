@@ -4,10 +4,10 @@ import type { ReactNode } from "react";
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { Moon, Sun, Type } from "lucide-react";
 
-import { GammaIconButton } from "../components/button";
-import { GammaMenu } from "../components/overlays";
-import { GAMMA_DEFAULT_FONT_ID, GAMMA_FONT_OPTIONS, GAMMA_MONO_FAMILY, gammaFontById, loadGammaFontSheets } from "../components/fonts";
-import { cn } from "../utils/cn";
+import { GammaIconButton } from "../components/button.js";
+import { GammaMenu } from "../components/overlays.js";
+import { GAMMA_DEFAULT_FONT_ID, GAMMA_FONT_OPTIONS, GAMMA_MONO_FAMILY, gammaFontById, loadGammaFontSheets } from "../components/fonts.js";
+import { cn } from "../utils/cn.js";
 
 export type GammaThemeMode = "dark" | "light";
 

@@ -4,12 +4,12 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ImagePlus, Wand2, X, Zap } from "lucide-react";
 
-import { GammaButton, GammaIconButton } from "../components/button";
-import { GammaChip, GammaTabs } from "../components/controls";
-import { GammaMajorTabs } from "../components/major-tabs";
-import { GammaMorphIcon } from "../components/morph-icon";
-import { GAMMA_RATIOS, SUBJECT_ACCENT, type GammaRatio, type GammaSubject } from "../components/subjects";
-import { cn } from "../utils/cn";
+import { GammaButton, GammaIconButton } from "../components/button.js";
+import { GammaChip, GammaTabs } from "../components/controls.js";
+import { GammaMajorTabs } from "../components/major-tabs.js";
+import { GammaMorphIcon } from "../components/morph-icon.js";
+import { GAMMA_RATIOS, SUBJECT_ACCENT, type GammaRatio, type GammaSubject } from "../components/subjects.js";
+import { cn } from "../utils/cn.js";
 
 export const GAMMA_MAX_PROMPT = 1000;
 /** 动态产出（视频/动画/短片/漫游）额外消耗 */

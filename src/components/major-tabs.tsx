@@ -4,8 +4,8 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import type { GammaSubject } from "../components/subjects";
-import { cn } from "../utils/cn";
+import type { GammaSubject } from "../components/subjects.js";
+import { cn } from "../utils/cn.js";
 
 const SCROLL_STEP = 320;
 const EDGE_EPSILON = 4;

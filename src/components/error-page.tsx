@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 错误页：403 / 404 / 500 / 维护中。大号描边数字 + 背后流动光晕，文案说明原因与下一步。

@@ -4,7 +4,7 @@ import type { InputHTMLAttributes, ReactNode } from "react";
 import { useId } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 const SPRING = { type: "spring", stiffness: 480, damping: 36 } as const;
 

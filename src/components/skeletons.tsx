@@ -1,7 +1,6 @@
 import type { ReactNode } from "react";
 
-import "../styles/effects.css";
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 按页面形状做的骨架屏：课程卡网格、作品瀑布流、备课三栏、列表行。

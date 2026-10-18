@@ -1,4 +1,4 @@
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 品牌标识。默认值是布鲁伽马，使用方可以整体替换：

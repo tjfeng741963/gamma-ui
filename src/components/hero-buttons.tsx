@@ -4,9 +4,8 @@ import type { PointerEvent, ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useReducedMotion, useSpring } from "motion/react";
 
-import "../styles/effects.css";
-import { useGammaBurst, type GammaBurstKind } from "../components/burst";
-import { cn } from "../utils/cn";
+import { useGammaBurst, type GammaBurstKind } from "../components/burst.js";
+import { cn } from "../utils/cn.js";
 
 /*
  * 醒目的特殊点击位：一个页面最多放一两个，用在「立即生成」「开通会员」「开始第一步」这类关键动作上。

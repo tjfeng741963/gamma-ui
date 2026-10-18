@@ -5,9 +5,9 @@ import { useEffect, useId, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { TrendingDown, TrendingUp } from "lucide-react";
 
-import { GammaCountUp } from "../components/motion";
-import { arcPath, delta, heatColor, monotonePath, niceMax, ticks } from "../core/chart-core";
-import { cn } from "../utils/cn";
+import { GammaCountUp } from "../components/motion.js";
+import { arcPath, delta, heatColor, monotonePath, niceMax, ticks } from "../core/chart-core.js";
+import { cn } from "../utils/cn.js";
 
 /*
  * 数据大屏风格图表（纯 SVG，无依赖）：

@@ -4,9 +4,9 @@ import { useEffect, useRef, useState } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 
-import { GammaCardCorners } from "../components/cards";
-import { SUBJECT_ACCENT, type GammaSubject } from "../components/subjects";
-import { cn } from "../utils/cn";
+import { GammaCardCorners } from "../components/cards.js";
+import { SUBJECT_ACCENT, type GammaSubject } from "../components/subjects.js";
+import { cn } from "../utils/cn.js";
 
 const SCROLL_STEP = 480;
 const EDGE_EPSILON = 4;

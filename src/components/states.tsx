@@ -4,9 +4,9 @@ import type { LucideIcon } from "lucide-react";
 import { AlertTriangle, Check, CircleDashed, Clock3, Heart, Loader2, RotateCcw, Sparkles, Undo2, X } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
-import { useGammaBurst } from "../components/burst";
-import { GammaIconMorph } from "../components/icon-morph";
-import { cn } from "../utils/cn";
+import { useGammaBurst } from "../components/burst.js";
+import { GammaIconMorph } from "../components/icon-morph.js";
+import { cn } from "../utils/cn.js";
 
 /*
  * 状态组件：本项目里生成任务、提交按钮、开关类图标的各种状态，统一外观和过渡。

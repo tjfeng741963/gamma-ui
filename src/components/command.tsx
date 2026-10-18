@@ -5,7 +5,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CornerDownLeft, Search } from "lucide-react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 export interface GammaCommandItem {
     id: string;

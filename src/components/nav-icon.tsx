@@ -2,7 +2,7 @@
 
 import { motion, useReducedMotion, type Transition } from "motion/react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 导航专用图标：统一 24×24 网格、圆头圆角描边，内容落在 3.5–20.5 安全区内。

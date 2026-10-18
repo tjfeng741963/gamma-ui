@@ -1,13 +1,13 @@
 "use client";
 
 import type { ReactNode } from "react";
-import { GammaLink } from "./link";
+import { GammaLink } from "./link.js";
 import { X } from "lucide-react";
 import { motion, useReducedMotion } from "motion/react";
 
-import { GammaLogo } from "../components/logo";
-import { GammaNavIcon, type GammaNavIconName } from "../components/nav-icon";
-import { cn } from "../utils/cn";
+import { GammaLogo } from "../components/logo.js";
+import { GammaNavIcon, type GammaNavIconName } from "../components/nav-icon.js";
+import { cn } from "../utils/cn.js";
 
 export interface GammaRailItem {
     key: string;

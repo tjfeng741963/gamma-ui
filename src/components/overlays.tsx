@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { AlertTriangle, CheckCircle2, Info, X } from "lucide-react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 const EASE_OUT = [0.22, 1, 0.36, 1] as const;
 

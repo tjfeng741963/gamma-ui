@@ -4,8 +4,8 @@ import type { LucideIcon } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { animate, useReducedMotion } from "motion/react";
 
-import { MORPH_SAMPLES, absolutizeMove, interpolatePairs, pairShapes, shapesToPath, type MorphPair, type MorphShape, type Pt } from "../core/path-morph";
-import { cn } from "../utils/cn";
+import { MORPH_SAMPLES, absolutizeMove, interpolatePairs, pairShapes, shapesToPath, type MorphPair, type MorphShape, type Pt } from "../core/path-morph.js";
+import { cn } from "../utils/cn.js";
 
 /*
  * 任意 lucide 图标之间的形变（参考 morphicons）：

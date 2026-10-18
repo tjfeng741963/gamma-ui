@@ -2,14 +2,14 @@
 
 import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
-import { GammaLink } from "./link";
+import { GammaLink } from "./link.js";
 import { motion, useReducedMotion } from "motion/react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-import { GammaLogo } from "../components/logo";
-import { GammaNavIcon } from "../components/nav-icon";
-import type { GammaRailItem } from "../components/shell";
-import { cn } from "../utils/cn";
+import { GammaLogo } from "../components/logo.js";
+import { GammaNavIcon } from "../components/nav-icon.js";
+import type { GammaRailItem } from "../components/shell.js";
+import { cn } from "../utils/cn.js";
 
 const COLLAPSED_KEY = "bluegamma:sidebar-collapsed";
 const WIDTH_EXPANDED = 208;

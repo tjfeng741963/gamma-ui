@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { useEffect, useRef, useState } from "react";
 import { animate, motion, useInView, useReducedMotion } from "motion/react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 export const GM_EASE = [0.22, 1, 0.36, 1] as const;
 

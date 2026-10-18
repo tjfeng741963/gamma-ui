@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 export interface GammaBannerSlide {
     key: string;

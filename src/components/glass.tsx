@@ -4,7 +4,7 @@ import type { PointerEvent, ReactNode } from "react";
 import { useRef } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 液态玻璃面板。四层结构：

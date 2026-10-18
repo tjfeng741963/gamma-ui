@@ -7,7 +7,7 @@ import { Popover as PopoverPrimitive } from "radix-ui";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { Check, ChevronDown, Loader2, Plus, Search, X } from "lucide-react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 选择器：单选 / 多选 / 标签输入 / 可搜索 / 分组 / 选项描述与图标 / 禁用项 / 加载中 / 空结果。

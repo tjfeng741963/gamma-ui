@@ -5,10 +5,10 @@ import { useRef } from "react";
 import { motion, useMotionTemplate, useMotionValue, useReducedMotion, useSpring } from "motion/react";
 import { AlertTriangle, ArrowUpRight, Download, Heart, Play, RotateCcw, Zap } from "lucide-react";
 
-import { GammaIconButton } from "../components/button";
-import { GammaCountUp, GammaProgressRing } from "../components/motion";
-import { SUBJECT_ACCENT, type GammaSubject } from "../components/subjects";
-import { cn } from "../utils/cn";
+import { GammaIconButton } from "../components/button.js";
+import { GammaCountUp, GammaProgressRing } from "../components/motion.js";
+import { SUBJECT_ACCENT, type GammaSubject } from "../components/subjects.js";
+import { cn } from "../utils/cn.js";
 
 const EASE_OUT = [0.22, 1, 0.36, 1] as const;
 

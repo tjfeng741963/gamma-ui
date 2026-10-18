@@ -5,8 +5,8 @@ import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { AlertCircle, CheckCircle2, FileText, Film, Image as ImageIcon, Music, RotateCcw, UploadCloud, X } from "lucide-react";
 
-import { checkFiles, describeAccept, formatBytes, type UploadLimits } from "../core/upload-core";
-import { cn } from "../utils/cn";
+import { checkFiles, describeAccept, formatBytes, type UploadLimits } from "../core/upload-core.js";
+import { cn } from "../utils/cn.js";
 
 /*
  * 上传：拖拽 / 点击 / 粘贴（Ctrl+V 截图）三种入口；逐个文件显示进度、成功、失败与重传。

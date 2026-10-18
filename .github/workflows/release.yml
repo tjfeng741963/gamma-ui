@@ -1,0 +1,63 @@
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: read
+  packages: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+          registry-url: https://npm.pkg.github.com
+          scope: "@tjfeng741963"
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: 全部检查
+        run: pnpm typecheck && pnpm lint && pnpm format:check && pnpm test && pnpm build && node scripts/check-dist.mjs
+
+      - name: 标签与版本一致
+        run: |
+          TAG="${GITHUB_REF_NAME#v}"
+          VERSION="$(node -p "require('./package.json').version")"
+          if [ "$TAG" != "$VERSION" ]; then
+            echo "✖ 标签 $GITHUB_REF_NAME 与 package.json 版本 $VERSION 不一致"
+            exit 1
+          fi
+
+      - name: CHANGELOG 含该版本条目
+        run: |
+          VERSION="$(node -p "require('./package.json').version")"
+          if ! grep -qE "^## \[?$VERSION\]?" CHANGELOG.md; then
+            echo "✖ CHANGELOG.md 缺少 $VERSION 的条目"
+            exit 1
+          fi
+
+      - name: 禁止重复发布
+        run: |
+          VERSION="$(node -p "require('./package.json').version")"
+          if npm view "@tjfeng741963/gamma-ui@$VERSION" version > /dev/null 2>&1; then
+            echo "✖ $VERSION 已发布，版本号必须前进"
+            exit 1
+          fi
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 发布到 GitHub Packages
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

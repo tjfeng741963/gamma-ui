@@ -4,8 +4,8 @@ import type { ReactNode } from "react";
 import { motion, useReducedMotion } from "motion/react";
 import { AlertTriangle, Check, Clock3, Crown, Hourglass, RotateCcw, ShieldAlert, Undo2, Zap } from "lucide-react";
 
-import { GammaButton } from "../components/button";
-import { cn } from "../utils/cn";
+import { GammaButton } from "../components/button.js";
+import { cn } from "../utils/cn.js";
 
 /*
  * 生成类特有状态（和计费 / 退款策略直接相关）：

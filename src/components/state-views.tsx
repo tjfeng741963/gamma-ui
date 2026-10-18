@@ -3,7 +3,7 @@
 import type { ReactNode } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
-import { cn } from "../utils/cn";
+import { cn } from "../utils/cn.js";
 
 /*
  * 状态视图：六种空 / 异常状态，统一插画语言（细线 + 品牌蓝青光晕 + 一个强调色块）。
